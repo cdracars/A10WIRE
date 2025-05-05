@@ -1,5 +1,19 @@
-stls/
-cad/
-firmware/
-docs/images/
-docs/print_tests/
+# Ignore build artifacts
+*.log
+*.bin
+*.uf2
+*.elf
+__pycache__/
+*.pyc
+
+# IDE-specific
+.vscode/
+.idea/
+.DS_Store
+
+# Generated content
+stls/*
+cad/*
+firmware/*
+scripts/*
+
