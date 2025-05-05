@@ -31,15 +31,21 @@ A10WIRE is a fully documented, budget-conscious conversion of the Geeetech A10 3
 ## 🗂 Repo Layout
 
 ```
-A10WIRE/
-├── conversion_analysis.md       ← Full stock-vs-mod breakdown
-├── conversion_canvas.md         ← Live project planning doc
-├── docs/                        ← Print tests, teardown notes, BOMs
-├── stls/                        ← Printable parts per phase
-├── firmware/                    ← Klipper configs + macros
-├── cad/                         ← Source parts (STEP, SCAD, Fusion)
-├── scripts/                     ← Optional helpers (e.g. BOM gen)
-└── changelog.md
+build_phases.md – Full upgrade roadmap and phase breakdown
+
+docs/a10_vs_enderwire.md – Hardware breakdown and compatibility notes
+
+docs/ – Print tests, teardown notes, BOMs
+
+stls/ – Printable parts per phase
+
+firmware/ – Klipper configs + macros
+
+cad/ – Source parts (STEP, SCAD, Fusion)
+
+scripts/ – Optional helpers (e.g. BOM gen)
+
+changelog.md – Version tracking for working phases
 ```
 
 ---
