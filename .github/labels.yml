@@ -1,0 +1,21 @@
+- name: phase-task
+  color: 0e8a16
+  description: Tasks scoped to a specific CorePath phase
+- name: docs
+  color: c5def5
+  description: Documentation changes
+- name: firmware
+  color: fef2c0
+  description: Klipper/Marlin configs or related FW work
+- name: cad-stl
+  color: bfdadc
+  description: CAD edits or STL additions
+- name: research
+  color: 0052cc
+  description: Investigations, measurements, sourcing
+- name: bug
+  color: d73a4a
+  description: Something is broken
+- name: enhancement
+  color: a2eeef
+  description: Improvement to existing feature/docs
