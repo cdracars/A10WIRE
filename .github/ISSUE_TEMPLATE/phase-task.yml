@@ -1,0 +1,89 @@
+name: Phase Task
+description: Track a specific task tied to a CorePath – A10 Build phase.
+title: "[Phase {phase}] <short-task-title>"
+labels: ["phase-task"]
+assignees: []
+body:
+  - type: dropdown
+    id: phase
+    attributes:
+      label: Phase
+      description: Which phase does this task belong to?
+      options:
+        - 0 — Baseline & Documentation
+        - 1 — Ergonomics & Usability
+        - 2 — Electronics Relocation
+        - 3 — Hero Me Learning Phase
+        - 4 — Linear Rail Upgrades
+        - 5 — Hotend Experiments
+        - 6 — CoreXZ Conversion (Switchwire)
+        - 7 — Stealthburner Transition
+        - 8 — CoreXY Transition (Optional)
+    validations:
+      required: true
+
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objective
+      description: What are you trying to accomplish or learn?
+      placeholder: e.g., Relocate LCD to 2020 extrusion and verify cable length/strain relief.
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria
+      description: What conditions define “done”?
+      placeholder: |
+        - LCD mounted to 2020, no wobble
+        - Cable strain relief added
+        - Photos added to docs/images/
+        - Notes logged in docs/
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps / Plan
+      description: Outline the steps you’ll take.
+      placeholder: |
+        1. Print mounting bracket
+        2. Test-fit and measure cable slack
+        3. Add strain relief
+        4. Document with photos
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: Parts sourced/printed
+        - label: Photos captured
+        - label: Dimensions recorded (mm/in)
+        - label: Notes added to docs/
+        - label: Linked in README status & Master Reference
+    validations:
+      required: false
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes / Findings
+      description: Observations, gotchas, or future improvements.
+      placeholder: Any surprises? Measurements? Cable lengths? Print settings?
+    validations:
+      required: false
+
+  - type: input
+    id: related
+    attributes:
+      label: Related Docs/PRs/Issues
+      description: Links to roadmap sections, docs, PRs, or other issues.
+      placeholder: e.g., docs/corepath_a10_conversion_canvas.md#phase-1
+    validations:
+      required: false
